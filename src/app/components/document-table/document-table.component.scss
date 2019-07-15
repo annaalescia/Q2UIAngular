@@ -1,0 +1,16 @@
+.document-table {
+  width: 100%;
+}
+
+.document-table-header {
+  display: flex;
+  h1 {
+    margin-top: 0;
+    flex: 4 0 0;
+  }
+  .mat-form-field {
+    position: relative;
+    bottom: 0.4rem;
+    flex: 1 0 0;
+  }
+}

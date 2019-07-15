@@ -1,0 +1,15 @@
+<div class="drop-file-wrapper">
+  <file-drop
+    dropZoneClassName="dropzone"
+    contentClassName="dropzone-content"
+    (onFileDrop)="dropped($event)"
+    (onFileOver)="fileOver($event)"
+    (onFileLeave)="fileLeave($event)"
+  >
+    <span><mat-icon aria-label="upload document">cloud_upload</mat-icon></span>
+  </file-drop>
+  <div class="uploaded-document-name" *ngFor="let item of files; let i = index">
+    <span>{{ item.relativePath }}</span>
+  </div>
+  <button mat-raised-button color="primary">Extract Contents</button>
+</div>

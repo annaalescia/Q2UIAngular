@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.dropzone {
+  height: 300px;
+  margin: auto;
+  border: 2px dotted #0782d0;
+  border-radius: 30px;
+  .dropzone-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: #0782d0;
+    .mat-icon {
+      font-size: 3rem;
+    }
+  }
+}
